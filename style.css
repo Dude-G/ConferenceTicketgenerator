@@ -1,0 +1,63 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background: url("assets/images/background-desktop.png") center/cover no-repeat fixed;
+}
+
+body {
+  position: relative;
+  overflow: hidden; 
+}
+
+ .decor {
+    position: absolute;
+    pointer-events: none; 
+  }
+
+  .decor1{
+    top: 589px;
+  
+  }
+
+ .decor2{
+    position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  width: 100%;
+  height: auto;
+ }
+
+.decor3{
+    left: 1457px;
+    top: 100px;
+}
+
+.decor4{
+    left: 20px; 
+    top: -70px;
+}
+
+.decor5{
+    right: 300px;
+    top: 450px;
+}
+
+.logo1{
+    left: 50%;
+     margin-top: 100px;
+     position: absolute;
+}
+
+
+
+
+  .content {
+    position: relative;
+    z-index: 10;
+  }
