@@ -5,59 +5,167 @@ html, body {
 }
 
 body {
-    background: url("assets/images/background-desktop.png") center/cover no-repeat fixed;
-}
-
-body {
+  background: url("assets/images/background-desktop.png") center/cover no-repeat fixed;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+  color: white;
 }
 
- .decor {
-    position: absolute;
-    pointer-events: none; 
-  }
+.decor {
+  position: absolute;
+  pointer-events: none;
+}
 
-  .decor1{
-    top: 589px;
-  
-  }
-
- .decor2{
-    position: absolute;
-  top: 0;
+.decor1 { top: 589px; }
+.decor2 {
+  position: absolute;
+  top: -58px;     
   left: 0;
-  right: 0;
-
   width: 100%;
   height: auto;
- }
-
-.decor3{
-    left: 1457px;
-    top: 100px;
+  margin: 0;
+  padding: 0;
+}
+.decor3 { 
+  left: 1474px;
+   top: 50px;
 }
 
-.decor4{
-    left: 20px; 
-    top: -70px;
+.decor4 {
+  position: absolute;
+  top: -120px;      
+  left: 50px;       
+    
+}
+.decor5 { right: 300px; top: 450px; }
+
+.logo1 {
+position: relative;
+  display: block;
+  margin: 60px auto 0 auto;   
+  transform: none;
 }
 
-.decor5{
-    right: 300px;
-    top: 450px;
+.h11 {
+  text-align: center;
+  color: white;
+  margin-top: 40px;        
+  font-size: 45px;
+  font-weight: 800;
+  line-height: 1.15;
 }
 
-.logo1{
-    left: 50%;
-     margin-top: 100px;
-     position: absolute;
+.subtext {
+  text-align: center;
+  opacity: 0.7;
+  margin-top: -10px;
 }
 
 
+.upload-box {
+  width: 380px;
+  height: 170px;
+  border: 2px dashed rgba(255,255,255,0.2);
+  border-radius: 12px;
+  margin: 40px auto;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.upload-box input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.upload-inner {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+}
+
+.upload-icon {
+  width: 40px;
+  opacity: 0.8;
+}
+
+.upload-inner p {
+  margin: 8px 0 0 0;
+  font-size: 15px;
+}
+
+.upload-inner span {
+  display: block;
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 5px;
+}
 
 
-  .content {
-    position: relative;
-    z-index: 10;
-  }
+form {
+  width: 380px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 15px;
+  margin-top: 18px;
+  opacity: 0.9;
+}
+
+input {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 14px;
+  border-radius: 8px;
+  color: white;
+  margin-top: 5px;
+  outline: none;
+  font-size: 15px;
+}
+
+.btn {
+  background: #ff6f61;
+  color: rgb(2, 13, 63);
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  width: 100%;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.error-msg {
+  color: #ff5b5b;
+  font-size: 13px;
+  margin: 5px 0 0 3px;
+  height: 14px;
+}
+
+
+input.error {
+  border-color: #ff5b5b !important;
+}
