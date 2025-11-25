@@ -62,6 +62,17 @@ position: relative;
   margin-top: -10px;
 }
 
+.label{
+  margin-right: 310px;
+}
+
+.label2{
+  margin-right: 275px;
+}
+
+.label3{
+  margin-right: 250px;
+}
 
 .upload-box {
   width: 380px;
@@ -91,7 +102,7 @@ position: relative;
 
 .upload-icon {
   width: 40px;
-  opacity: 0.8;
+  opacity: 0.8;;
 }
 
 .upload-inner p {
